@@ -32,7 +32,7 @@ This folder contains structured learning from the JavaScript course by **Fazt Ma
 
 ## 🖼️ Preview
 
-![Gallery project preview](docs/preview.png)
+![Gallery project preview](/05-fmaster/05-proyectos/galeria/docs/preview.png)
 
 ---
 

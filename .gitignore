@@ -1,0 +1,25 @@
+# Ignore VS Code settings
+.vscode/
+
+# Ignore Node.js dependencies and logs
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore system files
+.DS_Store         # macOS
+Thumbs.db         # Windows
+
+# Ignore log and environment files
+*.log
+.env
+.env.*
+
+# Editor and backup files
+*~
+*.swp
+*.bak
+
+# Ignore test output or scratch files
+tests/*.log

@@ -1,6 +1,7 @@
 # 📘 Curso de JavaScript - Fazt Master
 
-This folder contains structured learning from the JavaScript course by **Fazt Master**. The content is organized in progressive modules, covering from the browser environment to advanced DOM manipulation and projects.
+This folder contains structured learning from the **JavaScript course by Fazt Master**.  
+The content is organized in progressive modules, covering browser fundamentals, the DOM, and real projects.
 
 ---
 
@@ -8,38 +9,50 @@ This folder contains structured learning from the JavaScript course by **Fazt Ma
 
 ### `01-intro/`
 
-- Basic HTML, CSS, and JavaScript setup.
-- Initial practice to prepare for JS fundamentals.
+Basic HTML, CSS, and JavaScript setup.  
+Initial exercises to prepare for JavaScript concepts.
 
-### `02-bom/`
+### `02-modulos/`
 
-- Browser Object Model (BOM) concepts.
-- Topics: `window`, `location`, `navigator`, `alerts`, and `timers`.
+Introduction to JavaScript modules:
 
-### `03-dom/`
+- Import/export syntax
+- File organization
+- Reusable code structure
 
-- Deep dive into DOM manipulation.
-- Covers creation, modification, selection, styling and event handling.
+### `03-bom/`
 
-> Includes a subfolder `delegacion/` for event delegation and interaction patterns.
+Browser Object Model (BOM) topics:
+
+- `window`, `location`, `navigator`, `alert`, and `timers`
+- Practical HTML integration and CSS styling
+
+### `04-dom/`
+
+Document Object Model interaction:
+
+- Element creation, selection, and modification
+- Event handling
+- Delegation and propagation
 
 ### `05-proyectos/galeria/`
 
-- Mini project to apply knowledge using tools like:
-  - SASS for styling
-  - Rollup for bundling
-  - Organized project structure with `src/`, `public/`, and `node_modules/`
+Mini-project: responsive image gallery
 
-## 🖼️ Preview
-
-![Gallery project preview](/05-fmaster/05-proyectos/galeria/docs/preview.png)
+- Built with HTML, JavaScript and SASS
+- Uses Rollup for bundling
+- Includes asset folders (`img/`, `src/`, `sass/`, etc.)
+- Organized and documented with a `README.md` and preview
 
 ---
 
-## 🎯 Learning Goal
+## 🎯 Learning Goals
 
-To master JavaScript in the browser environment, learn how to manipulate the DOM dynamically, and apply best practices through real-world projects.
+- Strengthen JavaScript foundations in the browser context
+- Learn DOM and BOM APIs through real interaction
+- Apply modularity and structure using JS modules
+- Build real mini-projects with modern development tools
 
 ---
 
-> This course folder is part of the [js-courses](https://github.com/marlonmelara/js-courses) repository.
+> 📁 This folder is part of the [js-courses](https://github.com/marlonmelara/js-courses) repository.

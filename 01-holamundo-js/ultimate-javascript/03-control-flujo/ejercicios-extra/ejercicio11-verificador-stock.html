@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      :root {
+        --bg-color: #efd81d;
+        --text-color: #2c3e50;
+        --success-color: #27ae60;
+        --error-color: #e74c3c;
+        --accent-color: #34495e;
+        --font: "Segoe UI", sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: var(--font);
+        background-color: var(--bg-color);
+      }
+
+      .verificador {
+        width: 100%;
+        max-width: 440px;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .verificador__titulo {
+        margin-bottom: 1.2rem;
+        font-size: 1.6rem;
+        text-align: center;
+        color: var(--text-color);
+      }
+
+      .verificador__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .verificador,
+      .verificador__checkbox {
+        padding: 0.6rem;
+        font-size: 1rem;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+
+      .verificador__button {
+        padding: 0.6rem;
+        font-size: 1rem;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        background-color: var(--accent-color);
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .verificador__button:hover {
+        background-color: #2c3e50;
+      }
+
+      .verificador__result {
+        margin-top: 1.2rem;
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-align: center;
+      }
+
+      .verificador__result--success {
+        color: var(--success-color);
+      }
+
+      .verificador__result--error {
+        color: var(--error-color);
+      }
+    </style>
+    <title>Verificador de Stock de Productos</title>
+  </head>
+  <body>
+    <section class="verificador">
+      <h1 class="verificador__titulo">Verificador de Stock de Productos</h1>
+      <form action="" class="verificador__form" id="verificadorForm">
+        <input
+          type="number"
+          class="verificador__input"
+          id="cantidad"
+          placeholder="Ingresar la cantidad"
+          required="required" />
+        <button class="verificador__button" type="submit">
+          Verificar Pedido
+        </button>
+        <div class="verificador__resultado" id="verificadorResultado"></div>
+      </form>
+    </section>
+    <script>
+      document
+        .getElementById("verificadorForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          // Obtener el valor de stock solicitado para evaluar
+          const cantidadSolicitada = parseInt(
+            document.getElementById("cantidad").value,
+            10
+          );
+          const resultado = document.getElementById("verificadorResultado");
+          resultado.className = "verificador__result";
+
+          let stockDisponible = 100;
+
+          // Usando if-else
+          if (cantidadSolicitada <= stockDisponible) {
+            stockDisponible -= cantidadSolicitada; // Es equivalente a tener stockDisponible = stockDisponible - cantidadSolicitada
+            resultado.textContent = `✅ Compra realizada. Stock restante: ${stockDisponible}`;
+            resultado.classList.add("verificador__result--success");
+          } else {
+            resultado.textContent = "No hay suficiente stock disponible";
+            resultado.classList.add("verificador__result--error");
+          }
+        });
+    </script>
+  </body>
+</html>

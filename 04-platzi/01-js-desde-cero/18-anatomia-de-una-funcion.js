@@ -10,5 +10,5 @@ const discountPercentage = 5;
 const finalPrice = calculateDiscountedPrice(originalPrice, discountPercentage);
 
 console.log("Original Price: $" + originalPrice);
-console.log("Discount: $" + discountPercentage);
+console.log("Discount: " + discountPercentage + "%");
 console.log("Price with discount: $" + finalPrice);

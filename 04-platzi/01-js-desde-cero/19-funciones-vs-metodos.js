@@ -1,37 +1,28 @@
-// Capacidades que tienen las funciones al igual que otros objectos
-
-// 1. Pasar funciones como argumentos -> callback
-
-function a() {}
-
-function b(a) {}
-
-b(a);
+// Pasar funciones como argumentos -> callback
+function funcionA() {}
+function funcionB(callback) {}
+funcionB(funcionA);
 
 // Retornar funciones
-
-function a() {
-  function b() {}
-  return b;
+function retornaFuncion() {
+  function interna() {}
+  return interna;
 }
 
-// Asignar funciones a variables -> Expresión de función
+// Expresión de función
+const expresion = function () {};
 
-const a = function () {};
-
-// Tener propiedades y métodos
-
-function a() {}
+// Usar métodos y propiedades de funciones
+function metodoEjemplo() {}
 const obj = {};
-a.call(obj);
+metodoEjemplo.call(obj);
 
-// Anidar funciones --> Nested fuctions
-
-function a() {
-  function b() {
-    function c() {}
-    c();
+// Anidar funciones -> nested functions
+function externa() {
+  function intermedia() {
+    function interna() {}
+    interna();
   }
-  b();
+  intermedia();
 }
-a();
+externa();

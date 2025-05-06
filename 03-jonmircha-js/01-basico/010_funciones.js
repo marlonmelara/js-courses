@@ -4,15 +4,15 @@
 /* Una función es un bloque de código autocontenido independiente al scope o al ámbito global. Pueden o no recibir parámetros y pueden o no devolver valores */
 
 // Función declarada
-/* function estoEsUnaFuncion() {
+function estoEsUnaFuncion() {
   console.log("Uno");
   console.log("Dos");
   console.log("Tres");
-} */
+}
 
 // Invocación de función
-//estoEsUnaFuncion();
-//estoEsUnaFuncion();
+estoEsUnaFuncion();
+estoEsUnaFuncion();
 
 function unaFuncionQueDevuelveValor() {
   console.log("Uno");
@@ -22,8 +22,8 @@ function unaFuncionQueDevuelveValor() {
   return "La función ha retornado una cadena de texto";
 }
 
-//let valorDeFuncion = unaFuncionQueDevuelveValor();
-//console.log(valorDeFuncion);
+let valorDeFuncion = unaFuncionQueDevuelveValor();
+console.log(valorDeFuncion);
 
 function saludar(nombre = "Luffy", edad = 19) {
   console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años`);

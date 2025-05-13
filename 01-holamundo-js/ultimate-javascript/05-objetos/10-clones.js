@@ -58,3 +58,52 @@ let clone2 = { ...user2, age: 30 };
 // Mostramos los dos objetos
 console.log("user2:", user2);
 console.log("clone2:", clone2);
+
+// Objeto original con propiedades simples y un objeto anidado
+let usuarioOriginal = {
+  nombre: "Ana",
+  edad: 25,
+  preferencias: {
+    color: "azul",
+    musica: "rock",
+  },
+};
+
+// ✅ Parte 1: Clonación superficial con Object.assign()
+// Se crea un nuevo objeto copiando las propiedades del original,
+// pero las propiedades anidadas (como 'preferencias') siguen siendo referencias compartidas.
+let usuarioClonado = Object.assign({}, usuarioOriginal, {
+  edad: 30, // Sobrescribe el valor de 'edad'
+  pais: "México", // Se agrega una nueva propiedad
+});
+
+console.log(usuarioOriginal);
+console.log(usuarioClonado);
+
+// Modificamos la propiedad anidada 'preferencias.color' en el clon
+console.log((usuarioClonado.preferencias.color = "verde"));
+
+// ⚠️ Como 'preferencias' sigue siendo el mismo objeto compartido,
+// también se modifica en 'usuarioOriginal'
+console.log(usuarioOriginal);
+
+// ✅ Parte 2: Clonación superficial con spread operator (...)
+// También crea una copia superficial, pero aquí sobrescribimos completamente
+// la propiedad 'preferencias' con un nuevo objeto, rompiendo la referencia.
+let usuarioClonado2 = {
+  ...usuarioOriginal,
+  edad: 27, // Nuevo valor de 'edad'
+  pais: "Argentina", // Nueva propiedad
+  preferencias: {
+    // Se crea un nuevo objeto 'preferencias'
+    color: "rojo",
+    musica: "pop",
+  },
+};
+
+console.log(usuarioClonado2);
+
+// Ahora sí: al modificar 'preferencias.color' en el clon,
+// el objeto original no se ve afectado, porque ya no comparten referencia
+console.log((usuarioClonado2.preferencias.color = "naranja"));
+console.log(usuarioOriginal.preferencias.color); // Debería seguir siendo 'verde'

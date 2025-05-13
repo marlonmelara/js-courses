@@ -107,3 +107,20 @@ console.log(usuarioClonado2);
 // el objeto original no se ve afectado, porque ya no comparten referencia
 console.log((usuarioClonado2.preferencias.color = "naranja"));
 console.log(usuarioOriginal.preferencias.color); // Debería seguir siendo 'verde'
+
+// 🚩 Forma antigua de clonar objetos
+// Objeto original
+let usuario = {
+  nombre: "Ana",
+  edad: 25,
+};
+
+// Clonación manual (forma antigua)
+let copiaUsuario = {}; // Se crea un nuevo objeto vacío
+
+for (let key in usuario) {
+  copiaUsuario[key] = usuario[key]; // Se copian las propiedades una por una
+}
+
+console.log(usuario); // { nombre: "Ana", edad: 25 }
+console.log(copiaUsuario); // { nombre: "Ana", edad: 25 }

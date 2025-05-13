@@ -18,17 +18,20 @@ if ("draw" in point) {
 console.log(Object.keys(point));
 // Devuelve un array con las claves propias: ['x', 'y', 'draw']
 
+console.log(Object.values(point));
+// Devuelve un array con los valores propios: [10, 15, ƒ]
+
 for (let key of Object.keys(point)) {
-  // Itera sobre las claves del objeto
-  console.log(key, point[key]); // Muestra cada clave y su valor
+  // Itera sobre las claves propias enumerables del objeto
+  console.log(key, point[key]); // ['x', 10], ['y', 15], ['draw', ƒ]
 }
 
 for (let entry of Object.entries(point)) {
-  // Itera sobre pares [clave, valor]
-  console.log(entry); // Ej. ['x', 10]
+  // Itera sobre pares [clave, valor] propios y enumerables
+  console.log(entry); // ['x', 10], ['y', 15], ['draw', ƒ]
 }
 
 for (let key in point) {
-  // Itera sobre todas las propiedades enumerables del objeto
-  console.log(key, point[key]); // Similar al anterior, pero también incluiría heredadas si hubiera
+  // Itera sobre todas las propiedades enumerables, incluyendo heredadas del prototipo. Es una nueva forma de consultar propiedades de un objeto.
+  console.log(key, point[key]); // ['x', 10], ['y', 15], ['draw', ƒ]
 }

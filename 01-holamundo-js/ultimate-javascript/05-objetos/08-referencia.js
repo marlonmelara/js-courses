@@ -24,6 +24,12 @@ console.log(m, n); // { name: 'Juan' } { name: 'Juan' }
 console.log(m === n); // true → misma referencia: apuntan al mismo objeto
 console.log(m.name, n.name); // 'Juan' 'Juan'
 
+n.name = "Pedro"; // Modifica el mismo objeto al que apuntan 'm' y 'n'}
+
+console.log(m, n); // { name: 'Pedro' } { name: 'Pedro' }
+console.log(m === n); // true → siguen apuntando al mismo objeto
+console.log(m.name, n.name); // 'Pedro' 'Pedro'
+
 // ✅ 3. Primitivos como argumentos: se pasan por valor
 // Al pasar un primitivo a una función, se copia su valor.
 // Cambios dentro de la función no afectan a la variable original.
@@ -38,6 +44,7 @@ function increment(num) {
 increment(s);
 
 console.log(s); // 1 → 's' no cambia, sigue siendo 1
+console.log(increment(s)); // 2 → 'increment' devuelve una copia incrementada
 console.log(s === increment(s)); // false → 1 !== 2, porque 'increment' devuelve una copia incrementada
 
 // ✅ 4. Objetos como argumentos: se pasan por referencia. Aplica también a arrays y funciones

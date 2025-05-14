@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuarios Peanuts</title>
+    <link
+      rel="stylesheet"
+      href="/js-courses/01-holamundo-js/ultimate-javascript/00-css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="container__title">Usuarios</h1>
+      <div id="usuarios-container" class="container__form"></div>
+    </div>
+    <script>
+      class Usuario {
+        constructor(
+          nombre,
+          apellido,
+          fechaNacimiento,
+          direccion,
+          edad,
+          paisNacimiento,
+          suscripcionActiva
+        ) {
+          this.nombre = nombre;
+          this.apellido = apellido;
+          this.fechaNacimiento = fechaNacimiento;
+          this.direccion = direccion;
+          this.edad = edad;
+          this.paisNacimiento = paisNacimiento;
+          this.suscripcionActiva = suscripcionActiva;
+        }
+      }
+
+      // Crear usuarios
+      const usuarios = [
+        new Usuario(
+          "Charlie",
+          "Brown",
+          "30 de octubre de 1950",
+          "Calle Principal 1",
+          74,
+          "Estados Unidos",
+          true
+        ),
+        new Usuario(
+          "Lucy",
+          "van Pelt",
+          "3 de marzo de 1952",
+          "Av. del Psiquiatra 5",
+          72,
+          "Estados Unidos",
+          false
+        ),
+        new Usuario(
+          "Snoopy",
+          "Dog",
+          "4 de octubre de 1950",
+          "Casa Roja en el Jardín",
+          74,
+          "Estados Unidos",
+          true
+        ),
+      ];
+
+      // Obtener el contenedor del DOM
+      const contenedor = document.getElementById("usuarios-container");
+
+      // Mostrar usuarios dinámicamente
+      usuarios.forEach((usuario) => {
+        const card = document.createElement("div");
+        card.classList.add("card");
+        card.innerHTML = `
+    👤 <strong>Nombre:</strong> ${usuario.nombre} ${usuario.apellido}<br>
+    🎂 <strong>Nacimiento:</strong> ${usuario.fechaNacimiento}<br>
+    🧮 <strong>Edad:</strong> ${usuario.edad}<br>
+    🏠 <strong>Dirección:</strong> ${usuario.direccion}<br>
+    🌎 <strong>País:</strong> ${usuario.paisNacimiento}<br>
+    🔔 <strong>Suscripción:</strong> ${
+      usuario.suscripcionActiva ? "Activa" : "Inactiva"
+    }
+  `;
+        contenedor.appendChild(card); // Agrega el elemento div creado al contenedor principal en el DOM
+      });
+    </script>
+  </body>
+</html>

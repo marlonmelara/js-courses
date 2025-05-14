@@ -77,38 +77,39 @@ class Usuario {
   }
 }
 
-// Instancias de usuarios con datos ficticios basados en Peanuts
-const usuario1 = new Usuario(
-  "Charlie",
-  "Brown",
-  "30 de octubre de 1950",
-  "Calle Principal 1",
-  74,
-  "Estados Unidos",
-  true
-);
-
-const usuario2 = new Usuario(
-  "Lucy",
-  "van Pelt",
-  "3 de marzo de 1952",
-  "Av. del Psiquiatra 5",
-  72,
-  "Estados Unidos",
-  false
-);
-
-const usuario3 = new Usuario(
-  "Snoopy",
-  "Dog",
-  "4 de octubre de 1950",
-  "Casa Roja en el Jardín",
-  74,
-  "Estados Unidos",
-  true
-);
+// Instancias de usuarios con datos ficticios basados en Peanuts guardados en un array
+// Array de usuarios
+const usuarios = [
+  new Usuario(
+    "Charlie",
+    "Brown",
+    "30 de octubre de 1950",
+    "Calle Principal 1",
+    74,
+    "Estados Unidos",
+    true
+  ),
+  new Usuario(
+    "Lucy",
+    "van Pelt",
+    "3 de marzo de 1952",
+    "Av. del Psiquiatra 5",
+    72,
+    "Estados Unidos",
+    false
+  ),
+  new Usuario(
+    "Snoopy",
+    "Dog",
+    "4 de octubre de 1950",
+    "Casa Roja en el Jardín",
+    74,
+    "Estados Unidos",
+    true
+  ),
+];
 
 // Mostrar usuarios en consola
-console.log(usuario1);
-console.log(usuario2);
-console.log(usuario3);
+console.log(usuarios[0]);
+console.log(usuarios[1]);
+console.log(usuarios[2]);

@@ -5,7 +5,7 @@
   --error-color: #e74c3c;
   --accent-color: #34495e;
   --font: "Segoe UI", sans-serif;
-  --box-shadow: 0 4px 10px rgba (0, 0, 0, 0.1);
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -74,4 +74,16 @@ body {
 
 .container__result--error {
   color: var(--error-color);
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.card + .card {
+  margin-top: 1rem;
 }

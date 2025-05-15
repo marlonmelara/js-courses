@@ -33,6 +33,9 @@ function MyEvent(name, duration, tickets) {
 
 // Crear un evento
 const myEvent = new MyEvent("Concierto", 2, 50);
+console.log(myEvent.tickets); // 50 Propiedad pública que puede ser accedida directamente y modificada
+// myEvent.tickets = 100; // Modificando la propiedad pública
+// console.log(myEvent.tickets); // 100
 
 // Mostrar información del evento
 console.log(myEvent.getEventInfo());

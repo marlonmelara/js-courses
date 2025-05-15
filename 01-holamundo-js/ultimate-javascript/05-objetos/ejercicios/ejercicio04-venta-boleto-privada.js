@@ -1,3 +1,7 @@
+// Ejercicio 4: Venta de boletos con propiedades privadas
+
+// Función constructora para crear un evento
+// La propiedad entranceTickets es privada y no se puede acceder directamente desde fuera del objeto
 function MyEvent(name, duration, tickets) {
   this.name = name;
   this.duration = duration;

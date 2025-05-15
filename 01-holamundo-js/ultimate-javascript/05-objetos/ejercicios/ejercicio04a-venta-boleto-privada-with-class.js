@@ -1,3 +1,7 @@
+// Ejercicio 4: Venta de boletos con propiedades privadas usando clases
+
+// Clase para crear un evento
+// La propiedad entranceTickets es privada y no se puede acceder directamente desde fuera del objeto
 class MyEvent {
   #entranceTickets; // propiedad privada real
 

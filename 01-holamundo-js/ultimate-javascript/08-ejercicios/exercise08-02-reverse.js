@@ -2,10 +2,6 @@
 
 const numbers = [1, 2, 3, 4, 5];
 
-// Usando reverse()
-// const reversedNumbers = numbers.reverse();
-// console.log(reversedNumbers); // [5, 4, 3, 2, 1]
-
 // Usando un ciclo for
 const customReversed = (array) => {
   const newArray = [];
@@ -15,6 +11,18 @@ const customReversed = (array) => {
   return newArray;
 };
 
-const reversedNumbers2 = customReversed(numbers);
+const reversedNumbers = customReversed(numbers);
 console.log(numbers); // [ 1, 2, 3, 4, 5]
-console.log(reversedNumbers2); // [5, 4, 3, 2, 1]
+console.log(reversedNumbers); // [5, 4, 3, 2, 1]
+
+// Usando reverse()
+// const reversedNumbers2 = numbers.reverse();
+// console.log(reversedNumbers2); // [5, 4, 3, 2, 1]
+// console.log(numbers); // [5, 4, 3, 2, 1]
+
+// Usando reverse() sin modificar el array original
+const reversedNumbers3 = [...numbers];
+console.log(reversedNumbers3); // [ 1, 2, 3, 4, 5]
+reversedNumbers3.reverse();
+console.log(reversedNumbers3); // [5, 4, 3, 2, 1]
+console.log(numbers); // [ 1, 2, 3, 4, 5]

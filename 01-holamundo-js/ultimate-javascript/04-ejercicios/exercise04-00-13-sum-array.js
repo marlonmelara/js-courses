@@ -1,4 +1,5 @@
-// Ejercicio 1:
+// Ejercicio 13:
+
 // Dado un array de números, crea una función que devuelva la suma de todos los números utilizando un bucle for...of.
 
 let numbers = [0, 1, 2, 3, 4];

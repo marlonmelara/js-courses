@@ -2,7 +2,7 @@
 
 const numbers = [1, 2, 3, 4, 5];
 
-// Usando un ciclo for
+// Usando ciclo for
 const customReversed = (array) => {
   const newArray = [];
   for (let i = array.length - 1; i >= 0; i--) {

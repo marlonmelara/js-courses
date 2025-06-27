@@ -1,3 +1,4 @@
+// Ejercicio 00-1:
 // Hacer una función que reciba un array de lista de precios para obtener el precio promedio de los precios
 
 const prices = [100, 200, 300, 400, 500];

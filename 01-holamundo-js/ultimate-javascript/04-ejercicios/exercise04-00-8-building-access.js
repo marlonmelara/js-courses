@@ -1,4 +1,4 @@
-// Ejercicio 8
+// Ejercicio 00-8
 
 /*
 Ejercicio 8: Control de acceso a edificio

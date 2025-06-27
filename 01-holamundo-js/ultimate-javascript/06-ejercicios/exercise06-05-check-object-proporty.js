@@ -1,4 +1,4 @@
-// Ejercicio 5: Crear una función que determine si un objeto tiene una propiedad y devolverla
+// Ejercicio 05: Crear una función que determine si un objeto tiene una propiedad y devolverla
 
 let obj = {
   id: 1,

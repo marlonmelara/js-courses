@@ -1,3 +1,4 @@
+//Ejercicio 00-2:
 // Invertir un array. A pesar que existe un método para invertir los array vamos a generar una lógica para invertir de forma distinta
 
 const numbers = [1, 2, 3, 4, 5];

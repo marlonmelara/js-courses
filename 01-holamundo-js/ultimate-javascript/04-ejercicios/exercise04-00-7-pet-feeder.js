@@ -1,4 +1,4 @@
-// Ejercicio 7
+// Ejercicio 00-7
 /*
   Tenemos un alimentador automático para perros y gatos. Dependiendo
   del tipo de mascota (perro o gato) y de su peso, determinamos

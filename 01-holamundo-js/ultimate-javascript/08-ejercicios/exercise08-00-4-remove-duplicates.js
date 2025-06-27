@@ -1,3 +1,4 @@
+// Ejercicio 00-4:
 // Eliminar datos duplicados de un array y entregar un array con los datos depurados
 
 const array = [1, 2, 2, 3, 4, 4, 5, 6, 6];

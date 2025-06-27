@@ -1,3 +1,4 @@
+// Ejercicio 04
 /**
  * Crear un algoritmo que imprima todos los números impares del 0 al 10.
  */

@@ -1,3 +1,4 @@
+//Ejercicio 00-3:
 // Combinaremos dos arrays de números para posteriormente ordenarlos
 
 const array1 = [10, 5, 8];

@@ -1,4 +1,4 @@
-// Ejercicio 1: Tamaño máximo de carga
+// Ejercicio 00-1: Tamaño máximo de carga
 /*
   ¿Cómo funciona?
   Nuestro sistema solo aceptará aquellas imágenes que pesen menos de 5 MB.

@@ -1,4 +1,4 @@
-// Ejercicio 5
+// Ejercicio 00-5
 /*
   En los molinos de café en grano podemos seleccionar cuántas tazas deseamos.
   Aquí primero verificaremos si el molino tiene el contenedor de café molido.

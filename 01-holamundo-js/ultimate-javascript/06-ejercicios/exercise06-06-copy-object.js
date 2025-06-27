@@ -1,4 +1,4 @@
-// Ejercicio 6: Crear una función que cree una copia del objeto que le pasemos como parámetro sin usar operador spread ni Object.assign
+// Ejercicio 06: Crear una función que cree una copia del objeto que le pasemos como parámetro sin usar operador spread ni Object.assign
 
 let obj = {
   id: 1,

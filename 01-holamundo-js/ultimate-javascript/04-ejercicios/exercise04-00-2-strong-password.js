@@ -1,4 +1,4 @@
-// Ejercicio 2: Contraseña más segura
+// Ejercicio 00-2: Contraseña más segura
 /*
   ¿Cómo funciona?
   Trabajaremos en el registro de nuestros usuarios en nuestra aplicación.

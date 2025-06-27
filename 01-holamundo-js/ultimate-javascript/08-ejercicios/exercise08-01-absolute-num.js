@@ -1,4 +1,4 @@
-// Hacer una función que convertirá los números recibido en un array en el valor absoluto de los mismos
+// Ejercicio 01: Hacer una función que convertirá los números recibido en un array en el valor absoluto de los mismos
 
 const numbers = [-2, 3, 5, -15];
 

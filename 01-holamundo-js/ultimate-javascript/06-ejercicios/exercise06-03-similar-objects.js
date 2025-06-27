@@ -1,4 +1,4 @@
-// Ejercicio 3: Similar Objects
+// Ejercicio 03: Similar Objects
 // Solución 1️⃣
 // Crea una función que reciba dos objetos y devuelva true si son similares (tienen las mismas propiedades y valores) o false si no lo son.
 

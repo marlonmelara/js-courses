@@ -1,4 +1,4 @@
-// Exercise #2
+// Ejercicio 02
 /**
 - Nombre: ancho x alto
 - 8K: 7680 x 4320

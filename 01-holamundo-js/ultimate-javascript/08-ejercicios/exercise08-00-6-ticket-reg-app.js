@@ -1,5 +1,5 @@
 /**
- * Ejercicio 6: APLICACIÓN PARA REGISTRAR BOLETOS
+ * Ejercicio 00-6: Aplicación para registrar boletos
  *
  * DESCRIPCIÓN:
  * Sistema para gestionar boletos de eventos con funcionalidades de:

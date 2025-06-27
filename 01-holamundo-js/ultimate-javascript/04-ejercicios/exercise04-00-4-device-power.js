@@ -1,4 +1,4 @@
-// Ejercicio 4
+// Ejercicio 00-4
 /*
   Tenemos una batería portátil, capaz de proporcionar diferente potencia
   dependiendo del dispositivo que se conecte.

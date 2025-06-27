@@ -1,4 +1,4 @@
-// Ejercicio 2: Crear usuarios con una factory function
+// Ejercicio 02: Crear usuarios con una factory function
 
 // Factory function para crear un nuevo usuario como un objeto literal
 function createUser(name) {

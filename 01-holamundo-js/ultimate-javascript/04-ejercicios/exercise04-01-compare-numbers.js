@@ -1,4 +1,4 @@
-// Exercise #1
+// Ejercicio 01
 // Using classic funtion and if-else
 function whichIsLarge(a, b) {
   if (a > b) return `${a} is greater than ${b}`;

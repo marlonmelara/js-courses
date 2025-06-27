@@ -1,4 +1,4 @@
-// Ejercicio 12
+// Ejercicio 00-12
 /*
 -- Cálculo de descuento por monto de compra
 

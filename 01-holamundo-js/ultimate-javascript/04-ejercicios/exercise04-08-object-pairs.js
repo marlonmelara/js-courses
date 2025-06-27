@@ -1,3 +1,4 @@
+// Ejercicio 08
 /**
 Crear algoritmo que tome un array de objetos
 y devuelva un array de pares */

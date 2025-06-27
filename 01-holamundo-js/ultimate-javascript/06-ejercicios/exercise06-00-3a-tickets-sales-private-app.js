@@ -1,32 +1,24 @@
-// Ejercicio 4: Venta de boletos con propiedades privadas usando clases
+// Ejercicio 00-3a: Venta de boletos con propiedades privadas
 
-// Clase para crear un evento
+// Función constructora para crear un evento
 // La propiedad entranceTickets es privada y no se puede acceder directamente desde fuera del objeto
-class MyEvent {
-  #entranceTickets; // propiedad privada real
+function MyEvent(name, duration, tickets) {
+  this.name = name;
+  this.duration = duration;
+  let entranceTickets = tickets; // Propiedad privada: no accesible desde fuera del objeto
 
-  constructor(name, duration, tickets) {
-    this.name = name;
-    this.duration = duration;
-    this.#entranceTickets = tickets;
-  }
-
-  // Método: Mostrar información del evento
-  getEventInfo() {
-    return `🎤 Evento: ${this.name}, Duración: ${
-      this.duration
-    } horas, Entradas disponibles: ${this.#entranceTickets}`;
-  }
-
+  // Método: Mostrar información
+  this.getEventInfo = function () {
+    return `🎤 Evento: ${this.name}, Duración: ${this.duration} horas, Entradas disponibles: ${entranceTickets}`;
+  };
   // Método: Comprar boletos
-  sellTicket(quantity) {
+  this.sellTicket = function (quantity) {
     if (quantity > 5) {
       console.log("⛔ Solo se pueden comprar hasta 5 boletos por compra.");
       return;
     }
-
-    if (this.#entranceTickets >= quantity) {
-      this.#entranceTickets -= quantity;
+    if (entranceTickets >= quantity) {
+      entranceTickets -= quantity;
       console.log(
         `✅ Se han vendido ${quantity} entradas para el evento ${this.name}.`
       );
@@ -35,15 +27,13 @@ class MyEvent {
         `🚫 No hay suficientes entradas disponibles para el evento ${this.name}.`
       );
     }
-  }
-
-  // Método: Cancelar boletos
-  cancelTicket(quantity) {
-    this.#entranceTickets += quantity;
+  };
+  this.cancelTicket = function (quantity) {
+    entranceTickets += quantity;
     console.log(
       `🔄 Se han cancelado ${quantity} entradas para el evento ${this.name}.`
     );
-  }
+  };
 }
 
 // Crear un evento

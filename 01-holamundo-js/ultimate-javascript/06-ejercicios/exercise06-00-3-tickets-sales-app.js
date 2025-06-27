@@ -1,4 +1,4 @@
-// Ejercicio 3: App para venta de boletos
+// Ejercicio 00-3: App para venta de boletos
 
 // Función constructora para crear un evento
 function MyEvent(name, duration, tickets) {

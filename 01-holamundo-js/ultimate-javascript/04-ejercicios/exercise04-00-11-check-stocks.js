@@ -1,4 +1,4 @@
-// Ejercicio 11
+// Ejercicio 00-11
 /*
 -- Verificador de stock de productos
 

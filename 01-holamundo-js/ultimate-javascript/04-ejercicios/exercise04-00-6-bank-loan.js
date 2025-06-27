@@ -1,4 +1,4 @@
-// Ejercicio 6
+// Ejercicio 00-6
 /*
   Trabajamos en un banco que ofrece préstamos a muchos clientes; algunos
   de ellos tienen cuenta en nuestro banco.

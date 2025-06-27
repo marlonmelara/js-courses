@@ -1,24 +1,32 @@
-// Ejercicio 4: Venta de boletos con propiedades privadas
+// Ejercicio 00-3b: Venta de boletos con propiedades privadas usando clases
 
-// Función constructora para crear un evento
+// Clase para crear un evento
 // La propiedad entranceTickets es privada y no se puede acceder directamente desde fuera del objeto
-function MyEvent(name, duration, tickets) {
-  this.name = name;
-  this.duration = duration;
-  let entranceTickets = tickets; // Propiedad privada: no accesible desde fuera del objeto
+class MyEvent {
+  #entranceTickets; // propiedad privada real
 
-  // Método: Mostrar información
-  this.getEventInfo = function () {
-    return `🎤 Evento: ${this.name}, Duración: ${this.duration} horas, Entradas disponibles: ${entranceTickets}`;
-  };
+  constructor(name, duration, tickets) {
+    this.name = name;
+    this.duration = duration;
+    this.#entranceTickets = tickets;
+  }
+
+  // Método: Mostrar información del evento
+  getEventInfo() {
+    return `🎤 Evento: ${this.name}, Duración: ${
+      this.duration
+    } horas, Entradas disponibles: ${this.#entranceTickets}`;
+  }
+
   // Método: Comprar boletos
-  this.sellTicket = function (quantity) {
+  sellTicket(quantity) {
     if (quantity > 5) {
       console.log("⛔ Solo se pueden comprar hasta 5 boletos por compra.");
       return;
     }
-    if (entranceTickets >= quantity) {
-      entranceTickets -= quantity;
+
+    if (this.#entranceTickets >= quantity) {
+      this.#entranceTickets -= quantity;
       console.log(
         `✅ Se han vendido ${quantity} entradas para el evento ${this.name}.`
       );
@@ -27,13 +35,15 @@ function MyEvent(name, duration, tickets) {
         `🚫 No hay suficientes entradas disponibles para el evento ${this.name}.`
       );
     }
-  };
-  this.cancelTicket = function (quantity) {
-    entranceTickets += quantity;
+  }
+
+  // Método: Cancelar boletos
+  cancelTicket(quantity) {
+    this.#entranceTickets += quantity;
     console.log(
       `🔄 Se han cancelado ${quantity} entradas para el evento ${this.name}.`
     );
-  };
+  }
 }
 
 // Crear un evento

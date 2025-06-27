@@ -1,4 +1,5 @@
-// Función constructora para crear un objeto de usuario
+// Ejercicio 00-2: Función constructora para crear un objeto de usuario
+
 function User(
   name,
   lastname,

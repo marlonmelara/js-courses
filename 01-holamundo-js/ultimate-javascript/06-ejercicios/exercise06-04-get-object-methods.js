@@ -1,4 +1,4 @@
-// Ejercicio 4: Crear una función que determine cuales son los métodos de un objeto y guardarlos en un array
+// Ejercicio 04: Crear una función que determine cuales son los métodos de un objeto y guardarlos en un array
 // ℹ️ Los métodos son funciones que están dentro de un objeto
 
 let obj = {

@@ -1,4 +1,4 @@
-// Ejercicio 1: Crear usuarios
+// Ejercicio 01: Crear usuarios
 
 // Función constructora para crear un nuevo usuario
 function User(name) {

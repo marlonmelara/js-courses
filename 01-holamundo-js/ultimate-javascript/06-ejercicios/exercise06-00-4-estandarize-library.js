@@ -1,4 +1,4 @@
-// Ejercicio 5: Estandarizar biblioteca
+// Ejercicio 00-4: Estandarizar biblioteca
 
 // Lista de libros
 const libros = [

@@ -1,3 +1,4 @@
+// Ejercicio 00-5:
 // Dado un array con ceros y otros números, mover todos los ceros al final sin cambiar el orden del resto
 
 const array = [0, 1, 0, 3, 12, 0, 5];

@@ -1,3 +1,4 @@
+// Ejercicio 06
 /**
 Crear algoritmo que devuelva cantidad
 de números positivos */

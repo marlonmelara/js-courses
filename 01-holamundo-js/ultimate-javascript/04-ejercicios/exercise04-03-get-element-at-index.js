@@ -1,4 +1,4 @@
-// Exercise #3
+// Ejercicio 03
 /**
 - Validar que el índice proporcionado no sea menor a cero.
 - Verificar que el índice corresponda a un elemento existente en el array.

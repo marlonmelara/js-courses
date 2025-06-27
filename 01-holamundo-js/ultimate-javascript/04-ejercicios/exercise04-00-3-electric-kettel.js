@@ -1,4 +1,4 @@
-//Ejercicio 3
+//Ejercicio 00-3
 /*
   ¿Cómo funciona?
   Tendrás que generar el sistema de control de una pava eléctrica / hervidor eléctrico de agua.

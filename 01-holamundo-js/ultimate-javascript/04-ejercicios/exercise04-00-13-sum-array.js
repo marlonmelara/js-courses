@@ -1,4 +1,4 @@
-// Ejercicio 13:
+// Ejercicio 00-13
 
 // Dado un array de números, crea una función que devuelva la suma de todos los números utilizando un bucle for...of.
 

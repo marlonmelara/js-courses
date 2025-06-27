@@ -1,4 +1,4 @@
-code; // Ejercicio 9
+// Ejercicio 00-9
 
 /*
 Ejercicio 9: Detector de clima

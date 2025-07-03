@@ -35,6 +35,16 @@ const sortByTypeWithReduce = randomArray.reduce((acc, item) => {
 }, {});
 
 console.log(sortByTypeWithReduce);
+/**
+{
+  string: [ 'Hello', 'world!' ],
+  number: [ 12 ],
+  object: [ {}, { id: 15 } ],
+  array: [ [ 1, 2, 3 ] ],
+  boolean: [ true, false ],
+  null: [ null ]
+}
+*/
 
 // acc[itemType] = acc[itemType] ? acc[itemType] : [];
 // acc[itemType].push(item);

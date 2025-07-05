@@ -3,6 +3,7 @@
  */
 
 const numbers = [1, 2, 3, 4, 5];
+const anotherArray = [10, 20, 30];
 
 // Usando ciclo for
 const sumArrayWithFor = (arr) => {
@@ -14,8 +15,12 @@ const sumArrayWithFor = (arr) => {
 };
 
 console.log(sumArrayWithFor(numbers)); // 15
+console.log(sumArrayWithFor(anotherArray)); // 60
 
 // Usando reduce
-const sumArrayWithReduce = numbers.reduce((acc, curr) => acc + curr, 0);
+const sumArrayWithReduce = (arr) => {
+  return arr.reduce((acc, curr) => acc + curr, 0);
+};
 
-console.log(sumArrayWithReduce); // 15
+console.log(sumArrayWithReduce(numbers)); // 15
+console.log(sumArrayWithReduce(anotherArray)); // 60
